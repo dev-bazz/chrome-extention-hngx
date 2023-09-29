@@ -14,7 +14,10 @@
     "desktopCapture",
     "tabCapture",
     "storage",
-    "audioCapture"
+    "audioCapture",
+    "scripting",
+    "activeTab",
+    "tabs"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -22,5 +25,8 @@
   "action": {
     "default_title": "HelpMeOut",
     "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
