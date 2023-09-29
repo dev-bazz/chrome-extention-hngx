@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "HelpMeOut",
+  "short_name": "HelpMeOut",
+  "description": "Help your friends and loved ones by creating and sending videos on how to get things done on a website.",
+  "icons": {
+    "16": "small.png",
+    "48": "medium.png",
+    "128": "large.png",
+    "256": "large.png"
+  },
+  "permissions": [
+    "desktopCapture",
+    "tabCapture",
+    "storage",
+    "audioCapture"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "HelpMeOut",
+    "default_popup": "index.html"
+  }
+}

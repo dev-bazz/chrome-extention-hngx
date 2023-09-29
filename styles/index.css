@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+/* CSS Variables
+
+*/
+body {
+	font-family: "Sora", sans-serif;
+}
+main {
+	padding: 28px;
+	width: 300px;
+	min-height: 300px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.logo h2 {
+	font-size: 16px;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.control {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.description {
+	color: #413c6d;
+	margin-top: 16px;
+}
+
+.fullORtab {
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.tab > input[type="radio"] {
+	position: absolute;
+	display: none;
+}
+
+.tab {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tab input[type="radio"] + div svg path {
+	stroke: #928fab;
+	stroke-width: 1.5;
+}
+.tab input[type="radio"]:checked + div svg path {
+	stroke: #120b48;
+	stroke-width: 2.5;
+}
+
+.tab input[type="radio"]:checked + div + p {
+	font-weight: 600;
+	color: hsla(247, 73%, 16%, 1);
+}
+
+.tab input[type="radio"] + div + p {
+	font-weight: 600;
+	color: hsla(246, 14%, 62%, 1);
+}
+
+.camera_audio {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.ctrl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	border-radius: 12px;
+	border: 2px solid #100a42;
+}
+
+.ctrl p {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.ctrl .icon {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+/* Switch */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	scale: 0.6;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #120b48;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #120b48;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.btn {
+	all: unset;
+	cursor: pointer;
+	font-family: "Sora", sans-serif;
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	align-self: stretch;
+	border-radius: 12px;
+	background: #120b48;
+	color: white;
+	width: 85%;
+	margin-top: 24px;
+	font-size: 16px;
+	font-weight: 500;
+}
