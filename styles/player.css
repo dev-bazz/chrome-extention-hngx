@@ -1,16 +1,44 @@
-body
-	> .scaffold
-	> :is(top-nav, navigation-rail, side-nav, footer),
-main > :not(:last-child),
-main > :last-child > navigation-tree,
-main .toc-container {
-	display: none;
+.playerBazz .btnCtrl {
+	color: rgb(171, 21, 21);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-body {
-	display: none !important;
+.playerBazz {
+	top: 74vh;
+	left: 5vw;
+	max-width: 768px;
+	display: block;
+	z-index: 9999;
+	color: white;
+	display: flex;
+	gap: 40px;
 }
-main > :last-child {
-	margin-top: min(10vmax, 10rem);
-	margin-bottom: min(10vmax, 10rem);
+
+.playerBazz .webCam {
+	width: 160px;
+	aspect-ratio: 1/1;
+	border-radius: 164px;
+	background: #e8e8e8;
 }
+
+.playerBazz .ctrl {
+	border-radius: 200px;
+	background: #141414;
+	border: 2px solid rgba(98, 98, 98, 0.17);
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.playerBazz .ctrlButtons {
+	display: flex;
+}
+
+/* .playerBazz .circle {
+	background: white;
+	padding: 10px 12px;
+	border-radius: 50px;
+} */
