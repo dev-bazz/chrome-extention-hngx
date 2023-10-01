@@ -21,6 +21,14 @@
 	aspect-ratio: 1/1;
 	border-radius: 164px;
 	background: #e8e8e8;
+	overflow: hidden;
+}
+.playerBazz .webCam video {
+	width: 160px;
+	aspect-ratio: 1/1;
+	border-radius: 164px;
+	background: #e2cd13;
+	overflow: hidden;
 }
 
 .playerBazz .ctrl {
